@@ -1,0 +1,115 @@
+/* nav-section */
+.nav-container {
+  height: 55px;
+}
+.navbar-brand {
+  padding-right: 3%;
+  padding-left: 5%;
+}
+
+.fa-shopping-cart {
+  margin-right: 5px;
+  color: #2a2a2c;
+}
+/* banner-section */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #cdd2d5;
+  background-color: #212529;
+  background: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/BMW-Logo-HD-Pictures.jpg);
+  /* background: url(https://dribbble.com/shots/5025505-Bmw-banner/attachments/10714825?mode=media); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 65vh;
+  width: 100%;
+}
+.banner > h1 {
+  font-size: 3.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  text-shadow: 0 1px #170442, 0px -1px #170442, 1px -2px #170442,
+    2px -1px #170442, 2px -3px #ffffff, 3px -2px #ffffff, 3px -4px #ffffff,
+    4px -3px #ffffff, 4px -5px #000000;
+  color: #000000;
+}
+.banner > h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-shadow: 0 1px #000000, 0px -1px #000000, 1px -2px #000000,
+    2px -1px #000000, 2px -3px #000000, 3px -2px #000000, 3px -4px #000000,
+    4px -3px #000000, 4px -5px #000000;
+}
+
+/*Card */
+.card {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card:hover {
+  box-shadow: 7px 4px 45px 19px rgb(214, 213, 213);
+  transition: ease-out 0.5s;
+  cursor: pointer;
+}
+.card-titles {
+  font-weight: 700;
+}
+.fa-star {
+  color: #ffc107;
+}
+.sale-btn {
+  width: 40px;
+  height: auto;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 720;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  color: #cdd2d5;
+  background-color: #000000;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+}
+/* footer-section */
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0 0;
+  height: 16vh;
+  width: auto;
+  background-color: #212529;
+  color: #cdd2d5;
+}
+.link {
+  color: #cdd2d5;
+  text-decoration: none;
+}
+
+/* animation */
+
+.card {
+  transform-origin: 50% 50%;
+  animation: roll-in-animation 1.8s ease 0s 1 normal both running;
+}
+
+@keyframes roll-in-animation {
+  0% {
+    transform: translate(-100%, 0) rotate(-120deg);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
